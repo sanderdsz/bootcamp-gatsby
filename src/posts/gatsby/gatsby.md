@@ -5,4 +5,4 @@ date: "2020-05-01"
 
 I just started this one!
 
-![Grass](./grass.png)
+![opensourcerer](./opensourcerer.png)
