@@ -2,6 +2,8 @@ import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
 
 import Layout from "../components/layout"
+import Head from "../components/head"
+
 import blogStyles from "./blog.module.scss"
 
 const BlogPage = () => {
@@ -21,6 +23,7 @@ const BlogPage = () => {
 
   return (
     <div>
+      <Head title={"Blog"} />
       <Layout>
         <h1>Blog</h1>
         <ol className={blogStyles.posts}>
