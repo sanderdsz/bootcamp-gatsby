@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Head from "../components/head"
+import Layout from "../components/templates/layout/layout"
+import Head from "../components/atoms/head/head"
 
 import blogStyles from "./blog.module.scss"
 
