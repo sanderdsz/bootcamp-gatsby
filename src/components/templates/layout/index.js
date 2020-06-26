@@ -1,10 +1,10 @@
 import React from "react"
 
-import Header from "../../organisms/header/header"
-import Footer from "../../organisms/footer/footer"
+import Header from "../../organisms/header"
+import Footer from "../../organisms/footer"
 
 import "../../../styles/index.scss"
-import layoutStyles from "./layout.module.scss"
+import layoutStyles from "./styles.module.scss"
 
 const Layout = props => {
   return (
