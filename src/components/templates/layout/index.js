@@ -4,9 +4,7 @@ import Header from "../../organisms/header"
 import Footer from "../../organisms/footer"
 
 import "../../../styles/index.scss"
-import "../../../styles/darkMode.scss"
 import layoutStyles from "./styles.module.scss"
-
 
 const Layout = props => {
   return (

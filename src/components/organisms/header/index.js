@@ -1,8 +1,6 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
-import DarkModeToogle from '../../atoms/darkModeToggle'
-
 import headerStyles from "./styles.module.scss"
 
 const Header = () => {
@@ -60,9 +58,6 @@ const Header = () => {
             >
               Sobre
             </Link>
-          </li>
-          <li>
-            <DarkModeToogle/>
           </li>
         </ul>
       </nav>
