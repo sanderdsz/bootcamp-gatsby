@@ -9,6 +9,7 @@ const IndexPage = () => {
     <Layout>
       <Head title="Home" />
       <h1>Olá.</h1>
+      Hello
       <h2>
         Eu sou Sander, desenvolvedor full-stack vivendo na bela Santa Catarina.
       </h2>
