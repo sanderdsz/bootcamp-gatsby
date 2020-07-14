@@ -1,7 +1,10 @@
 /* Dark mode toggle */
 @import "./darkModeToggle.scss";
+
 /* Standart index css */
-@import "./index.scss";
+//@import "./index.scss";
+
+@import "../components/organisms/header/styles.scss";
 
 html {
   font-family: sans-serif;

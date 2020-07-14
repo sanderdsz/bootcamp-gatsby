@@ -22,16 +22,16 @@ const Header = () => {
         </Link>
       </h1>
       <nav>
-        <ul className="navList">
+        <ul className="nav-list">
           <li>
-            <Link className="navItem" activeClassName="activeNavItem" to="/">
+            <Link className="nav-item" activeClassName="active-nav-item" to="/">
               Home
             </Link>
           </li>
           <li>
             <Link
-              className="navItem"
-              activeClassName="activeNavItem"
+              className="nav-item"
+              activeClassName="active-nav-item"
               to="/blog"
             >
               Blog
@@ -39,8 +39,8 @@ const Header = () => {
           </li>
           <li>
             <Link
-              className="navItem"
-              activeClassName="activeNavItem"
+              className="nav-item"
+              activeClassName="active-nav-item"
               to="/contact"
             >
               Contato
@@ -48,8 +48,8 @@ const Header = () => {
           </li>
           <li>
             <Link
-              className="navItem"
-              activeClassName="activeNavItem"
+              className="nav-item"
+              activeClassName="active-nav-item"
               to="/about"
             >
               Sobre
