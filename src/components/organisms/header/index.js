@@ -25,7 +25,7 @@ const Header = () => {
         <ul className="nav-list">
           <li>
             <Link className="nav-item" activeClassName="active-nav-item" to="/">
-              Home
+              home
             </Link>
           </li>
           <li>
@@ -34,16 +34,17 @@ const Header = () => {
               activeClassName="active-nav-item"
               to="/blog"
             >
-              Blog
+              blog
             </Link>
           </li>
+          {/** 
           <li>
             <Link
               className="nav-item"
               activeClassName="active-nav-item"
               to="/contact"
             >
-              Contato
+              Contact
             </Link>
           </li>
           <li>
@@ -55,6 +56,7 @@ const Header = () => {
               Sobre
             </Link>
           </li>
+          */}
           <li>
             <DarkModeToogle />
           </li>
