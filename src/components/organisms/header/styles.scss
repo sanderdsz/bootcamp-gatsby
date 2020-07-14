@@ -2,17 +2,20 @@
   padding: 1rem 0 3rem;
 }
 
-.title.dark-mode {
-  color: yellow;
-  font-size: 3rem;
-  text-decoration: none;
-}
-
 .title {
   color: #000000;
   font-size: 3rem;
   text-decoration: none;
 }
+
+body.dark-mode {
+  .title{
+  color: yellow;
+  font-size: 3rem;
+  text-decoration: none;
+  }
+}
+
 
 .nav-list {
   display: flex;
@@ -34,3 +37,7 @@
 .active-nav-item {
   color: #333333;
 }
+
+
+
+

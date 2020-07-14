@@ -3,18 +3,12 @@ import React from "react"
 import Header from "../../organisms/header"
 import Footer from "../../organisms/footer"
 
-/*
-import "../../../styles/index.scss"
-import "../../../styles/darkMode.scss"
-import layoutStyles from "./styles.module.scss"
-*/
-
 import "../../../styles/global.scss"
 
 const Layout = props => {
   return (
-    <div>
-      <div>
+    <div className="container">
+      <div className="content">
         <Header />
         {props.children}
       </div>

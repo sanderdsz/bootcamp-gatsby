@@ -4,8 +4,6 @@ import { graphql, useStaticQuery, Link } from "gatsby"
 import Layout from "../components/templates/layout"
 import Head from "../components/atoms/head"
 
-import blogStyles from "../styles/blog.module.scss"
-
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -26,10 +24,10 @@ const BlogPage = () => {
       <Head title={"Blog"} />
       <Layout>
         <h1>Blog</h1>
-        <ol className={blogStyles.posts}>
+        <ol className="posts">
           {data.allContentfulBlogPost.edges.map(edge => {
             return (
-              <li className={blogStyles.post}>
+              <li className="post">
                 <Link to={`/blog/${edge.node.slug}`}>
                   <h2>{edge.node.title}</h2>
                   <p>{edge.node.publishedDate}</p>
