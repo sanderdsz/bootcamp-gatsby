@@ -1,63 +1,64 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
-import headerStyles from "./styles.module.scss"
+import DarkModeToogle from "../../atoms/darkModeToggle"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-          }
+    query {
+      site {
+        siteMetadata {
+          title
         }
       }
+    }
   `)
 
   return (
-    <header className={headerStyles.header}>
+    <header className="header">
       <h1>
-        <Link className={headerStyles.title} to="/">
+        <Link className="title" to="/">
           {data.site.siteMetadata.title}
         </Link>
       </h1>
       <nav>
-        <ul className={headerStyles.navList}>
+        <ul className="nav-list">
           <li>
-            <Link
-              className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
-              to="/"
-            >
-              Home
+            <Link className="nav-item" activeClassName="active-nav-item" to="/">
+              home
             </Link>
           </li>
           <li>
             <Link
-              className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
+              className="nav-item"
+              activeClassName="active-nav-item"
               to="/blog"
             >
-              Blog
+              blog
             </Link>
           </li>
+          {/** 
           <li>
             <Link
-              className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
+              className="nav-item"
+              activeClassName="active-nav-item"
               to="/contact"
             >
-              Contato
+              Contact
             </Link>
           </li>
           <li>
             <Link
-              className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
+              className="nav-item"
+              activeClassName="active-nav-item"
               to="/about"
             >
               Sobre
             </Link>
+          </li>
+          */}
+          <li>
+            <DarkModeToogle />
           </li>
         </ul>
       </nav>

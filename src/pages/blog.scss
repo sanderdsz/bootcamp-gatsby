@@ -6,15 +6,15 @@
 .post {
   margin: 1rem 0;
   a {
-    background: #f4f4f4;
-    color: #000000;
+    background: #E5E9F0;
+    color: #333333;
     display: block;
     padding: 1rem;
     text-decoration: none;
   }
 
   a:hover {
-    background: #e4e4e4;
+    background: #D8DEE9;
   }
 
   h2 {
@@ -26,5 +26,15 @@
     font-size: 0.8rem;
     font-style: italic;
   }
-  
+}
+body.dark-mode {
+  .post{
+    a {
+      background: #3B4252;
+      color: #ECEFF4
+    }
+    p {
+      color: #D8DEE9
+    }
+  }
 }

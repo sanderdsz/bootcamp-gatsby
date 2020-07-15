@@ -3,9 +3,16 @@
 }
 
 .title {
-  color: #000000;
+  color: #5E81AC;
   font-size: 3rem;
   text-decoration: none;
+}
+body.dark-mode {
+  .title{
+  color: #EBCB8B;
+  font-size: 3rem;
+  text-decoration: none;
+  }
 }
 
 .nav-list {
@@ -15,7 +22,7 @@
 }
 
 .nav-item {
-  color: #99999999;
+  color: #999999;
   font-size: 0.9rem;
   margin-right: 1.3rem;
   text-decoration: none;
@@ -24,7 +31,22 @@
 .nav-item:hover {
   color: #666666;
 }
+body.dark-mode {
+    .nav-item:hover{
+    color: #E5E9F0;
+  }
+}
+
 
 .active-nav-item {
   color: #333333;
 }
+body.dark-mode {
+  .active-nav-item{
+  color: #ECEFF4;
+}
+}
+
+
+
+
