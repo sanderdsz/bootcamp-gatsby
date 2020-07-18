@@ -2,7 +2,6 @@ import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
 import DarkModeToogle from "../../atoms/darkModeToggle"
-import Shiver from "../../atoms/shiverText"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -46,8 +45,7 @@ const Header = () => {
             <Link
             className="nav-item-shiver"
             activeClassName=""
-            to="/shiver"
-            >
+            to="/shiver">
               shiver
             </Link>
           </li>

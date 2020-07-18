@@ -8,11 +8,23 @@ const NotFound = () => {
   return (
     <Layout>
       <Head title={"404"} />
-      <h1>404, ops.</h1>
-      <p>
-        <Link to="/">Volte à homepage</Link>
-      </p>
-    </Layout>
+      <Link to="/">
+        <div class="hole-wrapper">
+          <div class="hole">
+            <div class="wood"></div>
+            <div class="hand">
+              <span class="finger-up"></span>
+              <span class="finger"></span>
+              <span class="finger"></span>
+              <span class="finger"></span>
+              <span class="finger"></span>
+            </div>
+            <div class="arm">
+            </div>
+        </div>
+      </div>
+    </Link>
+  </Layout>
   )
 }
 
