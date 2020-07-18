@@ -1,3 +1,8 @@
+:root {
+  --mainColorLightMode: #5E81AC;
+  --mainColorDarkMode: #EBCB8B;
+}
+
 .header {
   padding: 1rem 0 3rem;
 }
@@ -10,8 +15,6 @@
 body.dark-mode {
   .title{
   color: #EBCB8B;
-  font-size: 3rem;
-  text-decoration: none;
   }
 }
 
@@ -23,7 +26,7 @@ body.dark-mode {
 
 .nav-item {
   color: #999999;
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-right: 1.3rem;
   text-decoration: none;
 }
@@ -37,16 +40,52 @@ body.dark-mode {
   }
 }
 
-
 .active-nav-item {
   color: #333333;
 }
 body.dark-mode {
   .active-nav-item{
   color: #ECEFF4;
-}
+  }
 }
 
-
+.nav-item-shiver {
+  background:
+     linear-gradient(
+       to bottom, var(--mainColorLightMode) 0%,
+       var(--mainColorLightMode) 100%
+     );
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 2px 2px;
+  color: #999999;
+  text-decoration: none;
+  transition: background-size .4s;
+  margin-right: 1.3rem;
+}
+body.dark-mode {
+  .nav-item-shiver {
+    background:
+     linear-gradient(
+       to bottom, var(--mainColorDarkMode) 0%,
+       var(--mainColorDarkMode) 100%
+     );
+     background-position: 0 100%;
+	  background-repeat: repeat-x;
+    background-size: 2px 2px;
+    text-decoration: none;
+    transition: background-size .4s;
+  }
+}
+.nav-item-shiver:hover {
+  color: #E5E9F0;
+  background-size: 4px 50px;
+}
+body.dark-mode {
+  .nav-item-shiver:hover {
+    color: #333333;
+    background-size: 4px 50px;
+  }
+}
 
 
