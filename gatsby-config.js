@@ -14,6 +14,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-use-dark-mode",
     "gatsby-plugin-react-helmet",
+    `gatsby-plugin-transition-link`,
     {
       resolve: "gatsby-source-contentful",
       options: {
@@ -41,7 +42,7 @@ module.exports = {
               maxWidth: 750,
               linkImagesToOriginal: false,
             },
-            resolve: `gatsby-remark-embedder`,
+            resolve: "gatsby-remark-embedder",
           },
         ],
       },

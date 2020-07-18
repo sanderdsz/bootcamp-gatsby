@@ -2,14 +2,16 @@
 @import "./index.scss";
 /* Atoms styles */
 @import "../components/atoms/darkModeToggle/styles.scss";
+@import "../components/atoms/shiverAnimation/styles.scss";
+@import "../components/atoms/shiverText/styles.scss";
 /* Organisms styles */
 @import "../components/organisms/header/styles.scss";
 /* Templates styles */
 @import "../components/templates/layout/styles.scss";
 /* Pages styles */
 @import "../pages/blog.scss";
-
 @import "../pages/404.scss";
+
 
 html {
   font-family: sans-serif;
