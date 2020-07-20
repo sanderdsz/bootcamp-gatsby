@@ -1,59 +1,52 @@
 /*Colors*/
 $beam: #e9fef6;
-$sky-dark: hsl(200,
-40%,
-60%);
-$sky-bright: hsl(190,
-80%,
-90%);
+$sky-dark: hsl(200, 40%, 60%);
+$sky-bright: hsl(190, 80%, 90%);
 $ocean-deep: #306b98;
 $ocean-shallow: #9fc2ca;
-$ocean-surface: hsl(190,
-60%,
-80%);
+$ocean-surface: hsl(190, 60%, 80%);
 
 /*Gradients and Fills */
 .sky-bright {
-  stop-color: $sky-bright
+  stop-color: $sky-bright;
 }
 
 .sky-dark {
-  stop-color: $sky-dark
+  stop-color: $sky-dark;
 }
 
 .beam-gradient {
-  stop-color: $beam
+  stop-color: $beam;
 }
 
 .ocean-surface {
-  fill: $ocean-surface
+  fill: $ocean-surface;
 }
 
 .ocean-shallow {
-  stop-color: $ocean-shallow
+  stop-color: $ocean-shallow;
 }
 
 .ocean-deep {
-  stop-color: $ocean-deep
+  stop-color: $ocean-deep;
 }
 
 .ice {
-  fill: #f6f6ff
+  fill: #f6f6ff;
 }
 
 .ice-dark {
-  fill: #d7eef2
+  fill: #d7eef2;
 }
 
 .ice-shade {
-  fill: #e8f7f9
+  fill: #e8f7f9;
 }
-
 
 /*Light Beams*/
 @keyframes beams {
   100% {
-    opacity: 0.8
+    opacity: 0.8;
   }
 }
 
@@ -83,7 +76,6 @@ $ocean-surface: hsl(190,
   }
 }
 
-
 /*Ice Berg Animation*/
 .ice-berg {
   transform: rotate(-2deg) translate(0, 0);
@@ -93,11 +85,12 @@ $ocean-surface: hsl(190,
 
 @keyframes ice-berg {
   100% {
-    transform: rotate(2deg) translate(10px, 30px)
+    transform: rotate(2deg) translate(10px, 30px);
   }
 }
 
 /*Body Setup*/
 .world {
   width: 200px;
+  background-color: red;
 }

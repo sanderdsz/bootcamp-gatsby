@@ -8,10 +8,11 @@
 @import "../components/organisms/header/styles.scss";
 /* Templates styles */
 @import "../components/templates/layout/styles.scss";
+@import "../components/templates/blog/styles.scss";
 /* Pages styles */
 @import "../pages/blog.scss";
 @import "../pages/404.scss";
-
+@import "../pages/shiver.scss";
 
 html {
   font-family: sans-serif;
@@ -20,13 +21,13 @@ html {
 }
 
 body.dark-mode {
-  background-color: #2E3440;
+  background-color: #2e3440;
   color: #dfdfdf;
   transition: background-color 0.7s ease;
 }
 
 body.light-mode {
-  background-color: #ECEFF4;
+  background-color: #eceff4;
   color: #333;
   transition: background-color 0.7s ease;
 }
@@ -34,4 +35,3 @@ body.light-mode {
 footer {
   margin-top: 3rem;
 }
-
