@@ -93,3 +93,9 @@ $ocean-surface: hsl(190, 60%, 80%);
 .world {
   width: 250px;
 }
+
+@media (max-width: 360px) {
+  .world {
+    width: 125px;
+  }
+}
