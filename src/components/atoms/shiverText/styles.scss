@@ -21,14 +21,12 @@
 .shiver-text {
   width: 250px;
   height: 250px;
-  position: relative;
 }
 
 .animated-title {
-  background-color: red;
   color: #333333;
   font-family: Roboto, Arial, sans-serif;
-  transform: translate(-50%, -50%);
+  padding-top: 32px;
 }
 body.dark-mode {
   .animated-title {
@@ -67,6 +65,7 @@ body.dark-mode {
 
 .animated-title > div.text-top div span:first-child {
   color: #5e81ac;
+  padding: 8px 0;
 }
 body.dark-mode {
   .animated-title > div.text-top div span:first-child {
@@ -75,6 +74,7 @@ body.dark-mode {
 }
 
 .animated-title > div.text-bottom {
+  bottom: 0;
 }
 
 .animated-title > div.text-bottom div {

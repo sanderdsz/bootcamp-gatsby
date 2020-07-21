@@ -11,8 +11,10 @@ const Shiver = () => {
   return (
     <Layout>
       <Head title={"Shiver"} />
-      <ShiverAnimation />
-      <ShiverText />
+      <div className="shiver-container">
+        <ShiverAnimation />
+        <ShiverText />
+      </div>
     </Layout>
   )
 }
