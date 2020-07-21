@@ -10,11 +10,11 @@ import ShiverText from "../components/atoms/shiverText"
 const Shiver = () => {
   return (
     <Layout>
-        <Head title={"Shiver"} />
-        <ShiverAnimation/>
-        <div>
-          <ShiverText/>
-        </div>
+      <Head title={"Shiver"} />
+      <div className="shiver-container">
+        <ShiverAnimation />
+        <ShiverText />
+      </div>
     </Layout>
   )
 }
