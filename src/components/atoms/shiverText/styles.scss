@@ -2,7 +2,6 @@
   0% {
     transform: translate3d(0, 100%, 0);
   }
-  40%,
   60% {
     transform: translate3d(0, 50%, 0);
   }
@@ -19,16 +18,17 @@
   }
 }
 
+.shiver-text {
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
+
 .animated-title {
   background-color: red;
   color: #333333;
   font-family: Roboto, Arial, sans-serif;
-  height: 200px;
-  left: 50%;
-  position: absolute;
-  top: 35%;
   transform: translate(-50%, -50%);
-  width: 250px;
 }
 body.dark-mode {
   .animated-title {
@@ -37,16 +37,12 @@ body.dark-mode {
 }
 
 .animated-title > div {
-  height: 50%;
   overflow: hidden;
-  position: absolute;
-  width: 100%;
 }
 
 .animated-title > div div {
   font-size: 32px;
   padding: 16px 0;
-  position: absolute;
 }
 
 .animated-title > div div span {
@@ -54,12 +50,11 @@ body.dark-mode {
 }
 
 .animated-title > div.text-top {
-  border-bottom: 0.5vmin solid #333333;
-  top: 0;
+  border-bottom: 0.4vmin solid #333333;
 }
 body.dark-mode {
   .animated-title > div.text-top {
-    border-bottom: 0.5vmin solid #eceff4;
+    border-bottom: 0.4vmin solid #eceff4;
   }
 }
 
@@ -67,13 +62,11 @@ body.dark-mode {
   animation: showTopText 1s;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
-  bottom: 0;
   transform: translate(0, 100%);
 }
 
 .animated-title > div.text-top div span:first-child {
   color: #5e81ac;
-  padding: 8px 0;
 }
 body.dark-mode {
   .animated-title > div.text-top div span:first-child {
@@ -82,13 +75,11 @@ body.dark-mode {
 }
 
 .animated-title > div.text-bottom {
-  bottom: 0;
 }
 
 .animated-title > div.text-bottom div {
   animation: showBottomText 0.5s;
   animation-delay: 1.75s;
   animation-fill-mode: forwards;
-  top: 0;
   transform: translate(0, -100%);
 }

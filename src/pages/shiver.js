@@ -11,14 +11,8 @@ const Shiver = () => {
   return (
     <Layout>
       <Head title={"Shiver"} />
-      <div className="shiver-container">
-        <div className="shiver-content">
-          <ShiverAnimation />
-        </div>
-        <div className="shiver-content">
-          <ShiverText />
-        </div>
-      </div>
+      <ShiverAnimation />
+      <ShiverText />
     </Layout>
   )
 }
