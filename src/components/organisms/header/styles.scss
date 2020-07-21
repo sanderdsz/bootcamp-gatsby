@@ -1,6 +1,6 @@
 :root {
-  --mainColorLightMode: #5E81AC;
-  --mainColorDarkMode: #EBCB8B;
+  --mainColorLightMode: #5e81ac;
+  --mainColorDarkMode: #ebcb8b;
 }
 
 .header {
@@ -8,13 +8,19 @@
 }
 
 .title {
-  color: #5E81AC;
+  color: #5e81ac;
   font-size: 3rem;
   text-decoration: none;
+  @include respond-to(phone-small) {
+    font-size: 32px;
+  }
+  @include respond-to(phone-medium) {
+    font-size: 32px;
+  }
 }
 body.dark-mode {
-  .title{
-  color: #EBCB8B;
+  .title {
+    color: #ebcb8b;
   }
 }
 
@@ -35,8 +41,8 @@ body.dark-mode {
   color: #666666;
 }
 body.dark-mode {
-    .nav-item:hover{
-    color: #E5E9F0;
+  .nav-item:hover {
+    color: #e5e9f0;
   }
 }
 
@@ -44,42 +50,42 @@ body.dark-mode {
   color: #333333;
 }
 body.dark-mode {
-  .active-nav-item{
-  color: #ECEFF4;
+  .active-nav-item {
+    color: #eceff4;
   }
 }
 
 .nav-item-shiver {
-  background:
-     linear-gradient(
-       to bottom, var(--mainColorLightMode) 0%,
-       var(--mainColorLightMode) 100%
-     );
-	background-position: 0 100%;
-	background-repeat: repeat-x;
-	background-size: 2px 2px;
+  background: linear-gradient(
+    to bottom,
+    var(--mainColorLightMode) 0%,
+    var(--mainColorLightMode) 100%
+  );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
   color: #999999;
   text-decoration: none;
-  transition: background-size .4s;
+  transition: background-size 0.4s;
   margin-right: 1.3rem;
 }
 body.dark-mode {
   .nav-item-shiver {
-    background:
-     linear-gradient(
-       to bottom, var(--mainColorDarkMode) 0%,
-       var(--mainColorDarkMode) 100%
-     );
-     background-position: 0 100%;
-	  background-repeat: repeat-x;
+    background: linear-gradient(
+      to bottom,
+      var(--mainColorDarkMode) 0%,
+      var(--mainColorDarkMode) 100%
+    );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
     background-size: 2px 2px;
     text-decoration: none;
-    transition: background-size .4s;
+    transition: background-size 0.4s;
   }
 }
 
 .nav-item-shiver:hover {
-  color: #E5E9F0;
+  color: #e5e9f0;
   background-size: 4px 50px;
 }
 body.dark-mode {
@@ -91,12 +97,20 @@ body.dark-mode {
 
 .active-nav-item-shiver {
   background-color: var(--mainColorLightMode);
-  color: #E5E9F0;
+  color: #e5e9f0;
 }
 body.dark-mode {
-  .active-nav-item-shiver{
+  .active-nav-item-shiver {
     background-color: var(--mainColorDarkMode);
     color: #333333;
   }
 }
 
+/*
+@media screen and (max-width: $phone-small) {
+  .title {
+    font-size: 32px;
+  }
+}
+
+*/

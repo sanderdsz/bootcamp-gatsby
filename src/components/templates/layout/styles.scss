@@ -10,3 +10,10 @@
 .content {
   flex-grow: 1;
 }
+
+@media (max-width: 360px) {
+  .container {
+    padding: 1rem;
+    justify-content: space-evenly;
+  }
+}

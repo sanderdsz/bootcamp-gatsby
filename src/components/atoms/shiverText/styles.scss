@@ -83,3 +83,20 @@ body.dark-mode {
   animation-fill-mode: forwards;
   transform: translate(0, -100%);
 }
+
+@media (max-width: 360px) {
+  .shiver-text {
+    width: 175px;
+    height: 150px;
+  }
+  .animated-title {
+    padding-top: 4px;
+  }
+  .animated-title > div div {
+    font-size: 24px;
+    padding: 8px 0;
+  }
+  .animated-title > div.text-top div span:first-child {
+    padding: 4px 0;
+  }
+}

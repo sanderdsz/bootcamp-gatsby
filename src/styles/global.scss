@@ -1,3 +1,35 @@
+/* Responsive layouts */
+$phone-small: 360px;
+$phone-medium: 375px;
+$phone-large: 412px;
+
+@mixin respond-to($media) {
+  @if $media == phone-small {
+    @media only screen and (max-width: $phone-small) {
+      @content;
+    }
+  } @else if $media == phone-medium {
+    @media only screen and (min-width: $phone-small + 1) and (max-width: $phone-medium) {
+      @content;
+    }
+  } @else if $media == phone-large {
+    @media only screen and (min-width: $phone-medium + 1) and (max-width: $phone-large) {
+      @content;
+    }
+  }
+}
+
+/*Colors*/
+/* Frost */
+$primary-brand: #5e81ac;
+$secondary-brand: #79b8ca;
+$primary-blue: #88c0d0;
+$secondary-blue: #81a1c1;
+$primary-light: #eceff4;
+$primary-dark: #4c566a;
+
+/* Polar Night */
+
 /* Standart index css */
 @import "./index.scss";
 /* Atoms styles */
@@ -34,4 +66,48 @@ body.light-mode {
 
 footer {
   margin-top: 3rem;
+}
+
+/* Buttons */
+.shiver-button-medium-primary-blue {
+  padding: 4px 16px;
+  font-size: 16px;
+  background-color: $primary-blue;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+}
+.shiver-button-medium-primary-blue:hover {
+  background-color: $secondary-brand;
+  transition: color 200ms ease-in 0s;
+}
+
+.shiver-button-medium-primary-light {
+  padding: 4px 16px;
+  font-size: 16px;
+  background-color: $primary-light;
+  color: #333;
+  border-color: $primary-dark;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1.25px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body.dark-mode {
+  .shiver-button-medium-primary-light {
+    background-color: #2e3440;
+    color: #eceff4;
+  }
+}
+.shiver-button-medium-primary-light:hover {
+  color: $primary-brand;
+  border-color: $primary-brand;
+  transition: color 200ms ease-in 0s, border-color 200ms ease-in 0s;
+}
+body.dark-mode {
+  .shiver-button-medium-primary-light:hover {
+    color: $primary-brand;
+  }
 }
