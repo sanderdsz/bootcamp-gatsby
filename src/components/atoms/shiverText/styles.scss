@@ -21,12 +21,33 @@
 .shiver-text {
   width: 250px;
   height: 250px;
+  @include respond-to(phone-small) {
+    width: 175px;
+    height: 150px;
+  }
+  @include respond-to(phone-medium) {
+    width: 175px;
+    height: 150px;
+  }
+  @include respond-to(phone-large) {
+    width: 175px;
+    height: 150px;
+  }
 }
 
 .animated-title {
   color: #333333;
   font-family: Roboto, Arial, sans-serif;
   padding-top: 32px;
+  @include respond-to(phone-small) {
+    padding-top: 4px;
+  }
+  @include respond-to(phone-medium) {
+    padding-top: 4px;
+  }
+  @include respond-to(phone-large) {
+    padding-top: 4px;
+  }
 }
 body.dark-mode {
   .animated-title {
@@ -41,6 +62,18 @@ body.dark-mode {
 .animated-title > div div {
   font-size: 32px;
   padding: 16px 0;
+  @include respond-to(phone-small) {
+    font-size: 24px;
+    padding: 8px 0;
+  }
+  @include respond-to(phone-medium) {
+    font-size: 24px;
+    padding: 8px 0;
+  }
+  @include respond-to(phone-large) {
+    font-size: 24px;
+    padding: 8px 0;
+  }
 }
 
 .animated-title > div div span {
@@ -66,6 +99,15 @@ body.dark-mode {
 .animated-title > div.text-top div span:first-child {
   color: #5e81ac;
   padding: 8px 0;
+  @include respond-to(phone-small) {
+    padding: 4px 0;
+  }
+  @include respond-to(phone-medium) {
+    padding: 4px 0;
+  }
+  @include respond-to(phone-large) {
+    padding: 4px 0;
+  }
 }
 body.dark-mode {
   .animated-title > div.text-top div span:first-child {
@@ -82,21 +124,4 @@ body.dark-mode {
   animation-delay: 1.75s;
   animation-fill-mode: forwards;
   transform: translate(0, -100%);
-}
-
-@media (max-width: 360px) {
-  .shiver-text {
-    width: 175px;
-    height: 150px;
-  }
-  .animated-title {
-    padding-top: 4px;
-  }
-  .animated-title > div div {
-    font-size: 24px;
-    padding: 8px 0;
-  }
-  .animated-title > div.text-top div span:first-child {
-    padding: 4px 0;
-  }
 }
