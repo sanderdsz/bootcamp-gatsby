@@ -43,10 +43,7 @@ body.dark-mode {
 }
 
 .nav-item {
-  color: #999999;
-  font-size: 1rem;
-  margin-right: 1.3rem;
-  text-decoration: none;
+  margin-right: 16px;
 }
 
 .nav-item:hover {
@@ -80,6 +77,9 @@ body.dark-mode {
   text-decoration: none;
   transition: background-size 0.4s;
   margin-right: 1.3rem;
+  padding: 4px 8px;
+  text-decoration: none;
+  border-radius: 4px;
 }
 body.dark-mode {
   .nav-item-shiver {
@@ -110,6 +110,9 @@ body.dark-mode {
 .active-nav-item-shiver {
   background-color: var(--mainColorLightMode);
   color: #e5e9f0;
+  padding: 4px 8px;
+  text-decoration: none;
+  border-radius: 4px;
 }
 body.dark-mode {
   .active-nav-item-shiver {

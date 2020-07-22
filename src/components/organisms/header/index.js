@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
-import AniLink from "gatsby-plugin-transition-link/AniLink";
-
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import DarkModeToogle from "../../atoms/darkModeToggle"
 
@@ -26,28 +25,34 @@ const Header = () => {
       <nav>
         <ul className="nav-list">
           <li>
-            <Link 
-              className="nav-item"
-              activeClassName="active-nav-item"
-              to="/"
-            >
-              home
-            </Link>
+            <div className="nav-item">
+              <Link
+                className="shiver-button-secondary-light"
+                activeClassName="active-shiver-button-secondary-light"
+                to="/"
+              >
+                home
+              </Link>
+            </div>
           </li>
           <li>
-            <Link
-              className="nav-item"
-              activeClassName="active-nav-item"
-              to="/blog"
-            >
-              blog
-            </Link>
+            <div className="nav-item">
+              <Link
+                className="shiver-button-secondary-light"
+                activeClassName="active-shiver-button-secondary-light"
+                to="/blog"
+              >
+                blog
+              </Link>
+            </div>
           </li>
           <li>
             <AniLink
-            className="nav-item-shiver"
-            activeClassName="active-nav-item-shiver"
-            fade to="/shiver">
+              className="nav-item-shiver"
+              activeClassName="active-nav-item-shiver"
+              fade
+              to="/shiver"
+            >
               shiver
             </AniLink>
           </li>
