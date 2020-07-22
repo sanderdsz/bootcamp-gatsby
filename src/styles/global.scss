@@ -1,7 +1,7 @@
 /* Responsive layouts */
 $phone-small: 360px;
 $phone-medium: 375px;
-$phone-large: 412px;
+$phone-large: 414px;
 
 @mixin respond-to($media) {
   @if $media == phone-small {
@@ -83,7 +83,7 @@ footer {
 }
 
 .shiver-button-medium-primary-light {
-  padding: 4px 16px;
+  padding: 3px 15px;
   font-size: 16px;
   background-color: $primary-light;
   color: #333;

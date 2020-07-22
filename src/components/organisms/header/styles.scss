@@ -5,6 +5,15 @@
 
 .header {
   padding: 1rem 0 3rem;
+  @include respond-to(phone-small) {
+    padding: 1rem 0 1rem;
+  }
+  @include respond-to(phone-medium) {
+    padding: 1rem 0 2rem;
+  }
+  @include respond-to(phone-large) {
+    padding: 1rem 0 3rem;
+  }
 }
 
 .title {
@@ -15,6 +24,9 @@
     font-size: 32px;
   }
   @include respond-to(phone-medium) {
+    font-size: 32px;
+  }
+  @include respond-to(phone-large) {
     font-size: 32px;
   }
 }

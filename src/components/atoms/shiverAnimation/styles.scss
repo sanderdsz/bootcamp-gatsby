@@ -92,10 +92,13 @@ $ocean-surface: hsl(190, 60%, 80%);
 /*Body Setup*/
 .world {
   width: 250px;
-}
-
-@media (max-width: 360px) {
-  .world {
+  @include respond-to(phone-small) {
+    width: 125px;
+  }
+  @include respond-to(phone-medium) {
+    width: 125px;
+  }
+  @include respond-to(phone-large) {
     width: 125px;
   }
 }

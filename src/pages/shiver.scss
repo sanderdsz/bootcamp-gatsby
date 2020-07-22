@@ -8,6 +8,18 @@
   display: flex;
   justify-content: center;
   padding-top: 32px;
+  @include respond-to(phone-small) {
+    text-align: center;
+    padding-top: 16px;
+  }
+  @include respond-to(phone-medium) {
+    text-align: center;
+    padding-top: 16px;
+  }
+  @include respond-to(phone-large) {
+    text-align: center;
+    padding-top: 16px;
+  }
 }
 
 .shiver-container-text {
@@ -21,6 +33,12 @@
 .shiver-container-button {
   padding-left: 24px;
   padding-right: 24px;
+  @include respond-to(phone-small) {
+    margin-bottom: 16px;
+  }
+  @include respond-to(phone-medium) {
+    margin-bottom: 16px;
+  }
 }
 
 @media (max-width: 360px) {
