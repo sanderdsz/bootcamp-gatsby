@@ -28,7 +28,16 @@ $secondary-blue: #81a1c1;
 $primary-light: #eceff4;
 $primary-dark: #4c566a;
 
+/* Snow Storm */
+$snow-01: #eceff4;
+$snow-02: #e5e9f0;
+$snow-03: #d8dee9;
+
 /* Polar Night */
+$polar-night-01: #2e3440;
+$polar-night-02: #3b4252;
+$polar-night-03: #434c5e;
+$polar-night-04: #4c566a;
 
 /* Standart index css */
 @import "./index.scss";
@@ -109,5 +118,40 @@ body.dark-mode {
 body.dark-mode {
   .shiver-button-medium-primary-light:hover {
     color: $primary-brand;
+  }
+}
+
+.shiver-button-secondary-light {
+  padding: 4px 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  color: $polar-night-04;
+}
+body.dark-mode {
+  .shiver-button-secondary-light {
+    color: $snow-03;
+  }
+}
+
+.shiver-button-secondary-light:hover {
+  background-color: $snow-03;
+  color: $polar-night-01;
+  transition: background-color 200ms ease-in 0s;
+}
+body.dark-mode {
+  .shiver-button-secondary-light:hover {
+    background-color: $polar-night-04;
+    color: $snow-01;
+  }
+}
+
+.active-shiver-button-secondary-light {
+  background-color: $snow-03;
+  color: $polar-night-01;
+}
+body.dark-mode {
+  .active-shiver-button-secondary-light {
+    background-color: $polar-night-04;
+    color: $snow-01;
   }
 }
