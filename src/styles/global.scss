@@ -51,9 +51,9 @@ $polar-night-04: #4c566a;
 @import "../components/templates/layout/styles.scss";
 @import "../components/templates/blog/styles.scss";
 /* Pages styles */
-@import "../pages/blog.scss";
-@import "../pages/404.scss";
-@import "../pages/shiver.scss";
+@import "../pages/blog/styles.scss";
+@import "../pages/404/styles.scss";
+@import "../pages/shiver/styles.scss";
 
 html {
   font-family: sans-serif;

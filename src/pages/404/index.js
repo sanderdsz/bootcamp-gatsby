@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/templates/layout"
-import Head from "../components/atoms/head"
+import Layout from "../../components/templates/layout"
+import Head from "../../components/atoms/head"
 
 const NotFound = () => {
   return (
@@ -19,12 +19,11 @@ const NotFound = () => {
               <span class="finger"></span>
               <span class="finger"></span>
             </div>
-            <div class="arm">
-            </div>
+            <div class="arm"></div>
+          </div>
         </div>
-      </div>
-    </Link>
-  </Layout>
+      </Link>
+    </Layout>
   )
 }
 

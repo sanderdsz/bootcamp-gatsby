@@ -46,24 +46,6 @@ body.dark-mode {
   margin-right: 16px;
 }
 
-.nav-item:hover {
-  color: #666666;
-}
-body.dark-mode {
-  .nav-item:hover {
-    color: #e5e9f0;
-  }
-}
-
-.active-nav-item {
-  color: #333333;
-}
-body.dark-mode {
-  .active-nav-item {
-    color: #eceff4;
-  }
-}
-
 .nav-item-shiver {
   background: linear-gradient(
     to bottom,
