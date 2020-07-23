@@ -61,6 +61,12 @@ $aurora-05: #b48ead;
 @import "../pages/404/styles.scss";
 @import "../pages/shiver/styles.scss";
 
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700");
+
+html {
+  font: 1.2em "Rubik", sans-serif;
+}
+
 body.dark-mode {
   background-color: $polar-night-01;
   color: $snow-03;
