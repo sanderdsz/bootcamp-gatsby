@@ -61,12 +61,6 @@ $aurora-05: #b48ead;
 @import "../pages/404/styles.scss";
 @import "../pages/shiver/styles.scss";
 
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
 body.dark-mode {
   background-color: $polar-night-01;
   color: $snow-03;

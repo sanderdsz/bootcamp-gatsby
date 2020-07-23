@@ -4,7 +4,7 @@
 }
 
 .header {
-  padding: 1rem 0 3rem;
+  padding: 1rem 0 2rem;
   @include respond-to(phone-small) {
     padding: 1rem 0 1rem;
   }
@@ -12,7 +12,7 @@
     padding: 1rem 0 2rem;
   }
   @include respond-to(phone-large) {
-    padding: 1rem 0 3rem;
+    padding: 1rem 0 2rem;
   }
 }
 
@@ -102,12 +102,3 @@ body.dark-mode {
     color: #333333;
   }
 }
-
-/*
-@media screen and (max-width: $phone-small) {
-  .title {
-    font-size: 32px;
-  }
-}
-
-*/

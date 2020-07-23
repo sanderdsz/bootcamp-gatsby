@@ -56,26 +56,6 @@ const Header = () => {
               shiver
             </AniLink>
           </li>
-          {/** 
-          <li>
-            <Link
-              className="nav-item"
-              activeClassName="active-nav-item"
-              to="/contact"
-            >
-              Contact
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="nav-item"
-              activeClassName="active-nav-item"
-              to="/about"
-            >
-              Sobre
-            </Link>
-          </li>
-          */}
           <li>
             <DarkModeToogle />
           </li>
