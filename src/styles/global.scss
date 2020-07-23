@@ -20,14 +20,6 @@ $phone-large: 414px;
 }
 
 /*Colors*/
-/* Frost */
-$primary-brand: #5e81ac;
-$secondary-brand: #79b8ca;
-$primary-blue: #88c0d0;
-$secondary-blue: #81a1c1;
-$primary-light: #eceff4;
-$primary-dark: #4c566a;
-
 /* Snow Storm */
 $snow-01: #eceff4;
 $snow-02: #e5e9f0;
@@ -38,6 +30,20 @@ $polar-night-01: #2e3440;
 $polar-night-02: #3b4252;
 $polar-night-03: #434c5e;
 $polar-night-04: #4c566a;
+
+/* Frost */
+$frost-01: #8fbcbb;
+$frost-02: #88c0d0;
+$frost-03: #79b8ca;
+$frost-04: #81a1c1;
+$frost-05: #5e81ac;
+
+/* Aurora */
+$aurora-01: #bf616a;
+$aurora-02: #d08770;
+$aurora-03: #ebcb8b;
+$aurora-04: #a3be8c;
+$aurora-05: #b48ead;
 
 /* Standart index css */
 @import "./index.scss";
@@ -62,14 +68,14 @@ html {
 }
 
 body.dark-mode {
-  background-color: #2e3440;
-  color: #dfdfdf;
+  background-color: $polar-night-01;
+  color: $snow-03;
   transition: background-color 0.7s ease;
 }
 
 body.light-mode {
-  background-color: #eceff4;
-  color: #333;
+  background-color: $snow-01;
+  color: $polar-night-01;
   transition: background-color 0.7s ease;
 }
 
@@ -81,22 +87,22 @@ footer {
 .shiver-button-medium-primary-blue {
   padding: 4px 16px;
   font-size: 16px;
-  background-color: $primary-blue;
-  color: #333;
+  background-color: $frost-02;
+  color: $polar-night-01;
   border: none;
   border-radius: 4px;
 }
 .shiver-button-medium-primary-blue:hover {
-  background-color: $secondary-brand;
+  background-color: $frost-03;
   transition: color 200ms ease-in 0s;
 }
 
 .shiver-button-medium-primary-light {
   padding: 3px 15px;
   font-size: 16px;
-  background-color: $primary-light;
-  color: #333;
-  border-color: $primary-dark;
+  background-color: $snow-01;
+  color: $polar-night-01;
+  border-color: $polar-night-04;
   border-radius: 4px;
   border-style: solid;
   border-width: 1.25px;
@@ -106,18 +112,18 @@ footer {
 }
 body.dark-mode {
   .shiver-button-medium-primary-light {
-    background-color: #2e3440;
-    color: #eceff4;
+    background-color: $polar-night-01;
+    color: $snow-01;
   }
 }
 .shiver-button-medium-primary-light:hover {
-  color: $primary-brand;
-  border-color: $primary-brand;
+  color: $frost-05;
+  border-color: $frost-05;
   transition: color 200ms ease-in 0s, border-color 200ms ease-in 0s;
 }
 body.dark-mode {
   .shiver-button-medium-primary-light:hover {
-    color: $primary-brand;
+    color: $frost-05;
   }
 }
 
