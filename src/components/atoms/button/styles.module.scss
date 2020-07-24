@@ -1,4 +1,4 @@
-@import '../../../styles/global.scss';
+@import "../../../styles/global.scss";
 
 //index.modules.css
 .button {
@@ -6,17 +6,20 @@
   //font-size: 16px;
   //font-weight: 600;
   text-align: center;
-  padding: 0.7em 1.2em;
+  padding: 2px 14px;
   cursor: pointer;
   user-select: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 32px;
-  min-width: 96px;
+  //height: 32px;
+  //min-width: 96px;
   border-radius: 4px;
   background-color: #fff;
-  border: 1px solid;
+  border-width: 1px solid;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   color: #fff;
   -webkit-transition: background 0.2s ease;
   -moz-transition: background 0.2s ease;
@@ -48,93 +51,79 @@
   color: $polar-night-01;
 }
 .primary:hover {
-  background-color: $frost-03;
-  border-color: $frost-03;
+  background-color: $frost-02-shadow;
+  border-color: $frost-02-shadow;
+  color: $polar-night-01;
+}
+
+.success {
+  background-color: $aurora-04;
+  border-color: $aurora-04;
+  color: $polar-night-01;
+}
+.success:hover {
+  background-color: $aurora-04-shadow;
+  border-color: $aurora-04-shadow;
   color: $polar-night-01;
 }
 
 .warning {
-  background-color: $aurora-02;
-  border-color: $aurora-02;
-  color: $polar-night-01
+  background-color: $aurora-03;
+  border-color: $aurora-03;
+  color: $polar-night-01;
 }
 .warning:hover {
-  background-color: $aurora-01;
-  border-color: $aurora-01;
-  color: $polar-night-01
-}
-
-
-.basic {
-  background-color: #3777d1;
-  border-color: #3777d1;
-  color: #fff;
-}
-
-.basic:hover {
-  background-color: #fff;
-  border-color: #fff;
-  color: #3777d1;
-}
-
-
-.outline {
-  background-color: #fff;
-  border-color: #3777d1;
-  color: #3777d1;
-}
-
-.outline:hover {
-  background-color: #3777d1;
-  border-color: #3777d1;
-  color: #fff;
-}
-
-.link {
-  background-color: transparent;
-  color: #4c4c4c;
-  box-shadow: none;
-}
-
-.link:hover {
-  color: #40a9ff;
-  background-color: transparent;
-}
-
-.secondary {
-  background-color: #fff;
-  border-color: rgb(186, 186, 186);
-  color: #4c4c4c;
-}
-
-.secondary:hover {
-  background-color: #eee;
-  border-color: #eee;
+  background-color: $aurora-03-shadow;
+  border-color: $aurora-03-shadow;
+  color: $polar-night-01;
 }
 
 .danger {
-  color: #fff;
-  background-color: rgb(214, 69, 64);
-  border-color: rgb(214, 69, 64);
+  background-color: $aurora-01;
+  border-color: $aurora-01;
+  color: $polar-night-01;
 }
-
 .danger:hover {
-  background-color: rgb(208, 50, 45);
-  border-color: rgb(208, 50, 45);
+  background-color: $aurora-01-shadow;
+  border-color: $aurora-01-shadow;
+  color: $polar-night-01;
 }
 
 .disabled {
-  background-color: #fff;
-  border-color: #bababa;
-  color: #bababa;
+  background-color: $snow-03;
+  border-color: $snow-03;
+  color: $snow-03-shadow;
   box-shadow: none;
   opacity: 0.7;
   cursor: not-allowed;
   border: 1px solid;
 }
-
 .disabled:hover {
-  background-color: #fff;
-  color: #bababa;
-  border-color: #bababa;
+  background-color: $snow-03;
+  color: $snow-03-shadow;
+  border-color: $snow-03-shadow;
+}
+
+.default—outline {
+  background-color: $snow-01;
+  border-color: $polar-night-01;
+  color: $polar-night-04;
+  border: 1px solid;
+}
+.default—outline:hover {
+  color: $frost-04;
+  border-color: $frost-04;
+}
+
+.primary—outline {
+  background-color: $snow-01;
+  border-color: $frost-02;
+  color: $frost-02;
+  border: 1px solid;
+}
+.primary—outline:hover {
+  background-color: rgba($frost-02, 0.2);
+  opacity: 0.8;
+  color: $frost-02-shadow;
+  border-color: $frost-02-shadow;
 }

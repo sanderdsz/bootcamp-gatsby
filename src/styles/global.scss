@@ -24,6 +24,7 @@ $phone-large: 414px;
 $snow-01: #eceff4;
 $snow-02: #e5e9f0;
 $snow-03: #d8dee9;
+$snow-03-shadow: #a2a6af;
 
 /* Polar Night */
 $polar-night-01: #2e3440;
@@ -34,21 +35,21 @@ $polar-night-04: #4c566a;
 /* Frost */
 $frost-01: #8fbcbb;
 $frost-02: #88c0d0;
-$frost-03: #79b8ca;
-$frost-04: #81a1c1;
-$frost-05: #5e81ac;
+$frost-02-shadow: #79b8ca;
+$frost-03: #81a1c1;
+$frost-04: #5e81ac;
 
 /* Aurora */
-$aurora-01: #A7555D;
-$aurora-02: #bf616a;
-$aurora-03: #B67662;
-$aurora-04: #d08770;
-$aurora-05: #CEB27A;
-$aurora-06: #ebcb8b;
-$aurora-07: #8FA67B;
-$aurora-08: #a3be8c;
-$aurora-09: #9E7C97;
-$aurora-10: #b48ead;
+$aurora-01-shadow: #a7555d;
+$aurora-01: #bf616a;
+$aurora-02-shadow: #b67662;
+$aurora-02: #d08770;
+$aurora-03-shadow: #ceb27a;
+$aurora-03: #ebcb8b;
+$aurora-04-shadow: #8fa67b;
+$aurora-04: #a3be8c;
+$aurora-05-shadow: #9e7c97;
+$aurora-05: #b48ead;
 
 /* Standart index css */
 @import "./index.scss";
@@ -77,7 +78,6 @@ html {
   font: 112.5%/1.45em "Rubik", sans-serif;
 }
 
-
 body.dark-mode {
   background-color: $polar-night-01;
   color: $snow-03;
@@ -103,7 +103,7 @@ footer {
   border-radius: 4px;
 }
 .shiver-button-medium-primary-frost:hover {
-  background-color: $frost-03;
+  background-color: $frost-02-shadow;
   transition: color 200ms ease-in 0s;
 }
 
@@ -127,13 +127,13 @@ body.dark-mode {
   }
 }
 .shiver-button-medium-primary-light:hover {
-  color: $frost-05;
-  border-color: $frost-05;
+  color: $frost-04;
+  border-color: $frost-04;
   transition: color 200ms ease-in 0s, border-color 200ms ease-in 0s;
 }
 body.dark-mode {
   .shiver-button-medium-primary-light:hover {
-    color: $frost-05;
+    color: $frost-04;
   }
 }
 
