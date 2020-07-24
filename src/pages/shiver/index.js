@@ -4,8 +4,8 @@ import { Link } from "gatsby"
 import Layout from "../../components/templates/layout"
 import Head from "../../components/atoms/head"
 
-import ShiverAnimation from "../../components/atoms/shiverAnimation"
-import ShiverText from "../../components/atoms/shiverText"
+import ShiverAnimation from "../../components/atoms/shiverIcebergAnimation"
+import ShiverText from "../../components/atoms/shiverTextAnimation"
 
 const Shiver = () => {
   return (
@@ -28,7 +28,7 @@ const Shiver = () => {
       </div>
       <div className="shiver-container">
         <div className="shiver-container-button">
-          <button className="shiver-button-medium-primary-blue">
+          <button className="shiver-button-medium-primary-frost">
             Coming soon
           </button>
         </div>

@@ -39,33 +39,44 @@ $frost-04: #81a1c1;
 $frost-05: #5e81ac;
 
 /* Aurora */
-$aurora-01: #bf616a;
-$aurora-02: #d08770;
-$aurora-03: #ebcb8b;
-$aurora-04: #a3be8c;
-$aurora-05: #b48ead;
+$aurora-01: #A7555D;
+$aurora-02: #bf616a;
+$aurora-03: #B67662;
+$aurora-04: #d08770;
+$aurora-05: #CEB27A;
+$aurora-06: #ebcb8b;
+$aurora-07: #8FA67B;
+$aurora-08: #a3be8c;
+$aurora-09: #9E7C97;
+$aurora-10: #b48ead;
 
 /* Standart index css */
 @import "./index.scss";
+
 /* Atoms styles */
 @import "../components/atoms/darkModeToggle/styles.scss";
-@import "../components/atoms/shiverAnimation/styles.scss";
-@import "../components/atoms/shiverText/styles.scss";
+@import "../components/atoms/shiverIcebergAnimation/styles.scss";
+@import "../components/atoms/shiverTextAnimation/styles.scss";
+
 /* Organisms styles */
 @import "../components/organisms/header/styles.scss";
+
 /* Templates styles */
 @import "../components/templates/layout/styles.scss";
 @import "../components/templates/blog/styles.scss";
+
 /* Pages styles */
 @import "../pages/blog/styles.scss";
 @import "../pages/404/styles.scss";
 @import "../pages/shiver/styles.scss";
 
+/* Typography */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700");
 
 html {
-  font: 1.2em "Rubik", sans-serif;
+  font: 112.5%/1.45em "Rubik", sans-serif;
 }
+
 
 body.dark-mode {
   background-color: $polar-night-01;
@@ -83,8 +94,7 @@ footer {
   margin-top: 3rem;
 }
 
-/* Buttons */
-.shiver-button-medium-primary-blue {
+.shiver-button-medium-primary-frost {
   padding: 4px 16px;
   font-size: 16px;
   background-color: $frost-02;
@@ -92,7 +102,7 @@ footer {
   border: none;
   border-radius: 4px;
 }
-.shiver-button-medium-primary-blue:hover {
+.shiver-button-medium-primary-frost:hover {
   background-color: $frost-03;
   transition: color 200ms ease-in 0s;
 }

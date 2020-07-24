@@ -37,7 +37,6 @@
 
 .animated-title {
   color: #333333;
-  font-family: Roboto, Arial, sans-serif;
   padding-top: 32px;
   @include respond-to(phone-small) {
     padding-top: 4px;
