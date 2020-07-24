@@ -6,7 +6,7 @@
   //font-size: 16px;
   //font-weight: 600;
   text-align: center;
-  padding: 2px 14px;
+  padding: 3px 15px;
   cursor: pointer;
   user-select: none;
   display: inline-flex;
@@ -14,7 +14,7 @@
   justify-content: center;
   //height: 32px;
   //min-width: 96px;
-  border-radius: 4px;
+  border-radius: 6px;
   background-color: #fff;
   border-width: 1px solid;
   box-sizing: border-box;
@@ -41,18 +41,18 @@
   color: $polar-night-04;
 }
 .default:hover {
-  background-color: $snow-03;
+  background-color: rgba($snow-02, 0.9);
+  opacity: 0.9;
   color: $polar-night-04;
 }
 
 .primary {
   background-color: $frost-02;
-  border-color: $frost-02;
   color: $polar-night-01;
 }
 .primary:hover {
-  background-color: $frost-02-shadow;
-  border-color: $frost-02-shadow;
+  background-color: rgba($frost-02, 0.9);
+  opacity: 0.9;
   color: $polar-night-01;
 }
 
@@ -62,8 +62,8 @@
   color: $polar-night-01;
 }
 .success:hover {
-  background-color: $aurora-04-shadow;
-  border-color: $aurora-04-shadow;
+  background-color: rgba($aurora-04, 0.9);
+  opacity: 0.9;
   color: $polar-night-01;
 }
 
@@ -73,8 +73,8 @@
   color: $polar-night-01;
 }
 .warning:hover {
-  background-color: $aurora-03-shadow;
-  border-color: $aurora-03-shadow;
+  background-color: rgba($aurora-03, 0.9);
+  opacity: 0.9;
   color: $polar-night-01;
 }
 
@@ -84,24 +84,28 @@
   color: $polar-night-01;
 }
 .danger:hover {
-  background-color: $aurora-01-shadow;
-  border-color: $aurora-01-shadow;
+  background-color: rgba($aurora-01, 0.9);
+  opacity: 0.9;
   color: $polar-night-01;
 }
 
 .disabled {
-  background-color: $snow-03;
-  border-color: $snow-03;
-  color: $snow-03-shadow;
+  background-color: rgba($snow-03, 0.4);
+  border-color: $snow-04;
+  color: rgba($snow-03, 0.6);
+  opacity: 0.9;
   box-shadow: none;
-  opacity: 0.7;
   cursor: not-allowed;
   border: 1px solid;
 }
 .disabled:hover {
-  background-color: $snow-03;
-  color: $snow-03-shadow;
-  border-color: $snow-03-shadow;
+  background-color: rgba($snow-03, 0.4);
+  border-color: $snow-04;
+  color: rgba($snow-03, 0.6);
+  opacity: 0.9;
+  box-shadow: none;
+  cursor: not-allowed;
+  order: 1px solid;
 }
 
 .default—outline {
@@ -123,7 +127,6 @@
 }
 .primary—outline:hover {
   background-color: rgba($frost-02, 0.2);
-  opacity: 0.8;
-  color: $frost-02-shadow;
-  border-color: $frost-02-shadow;
+  color: $frost-02;
+  border-color: $frost-02;
 }

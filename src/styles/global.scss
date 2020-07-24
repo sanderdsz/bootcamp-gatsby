@@ -24,7 +24,7 @@ $phone-large: 414px;
 $snow-01: #eceff4;
 $snow-02: #e5e9f0;
 $snow-03: #d8dee9;
-$snow-03-shadow: #a2a6af;
+$snow-04: #C8CCD2;
 
 /* Polar Night */
 $polar-night-01: #2e3440;
@@ -35,20 +35,14 @@ $polar-night-04: #4c566a;
 /* Frost */
 $frost-01: #8fbcbb;
 $frost-02: #88c0d0;
-$frost-02-shadow: #79b8ca;
 $frost-03: #81a1c1;
 $frost-04: #5e81ac;
 
 /* Aurora */
-$aurora-01-shadow: #a7555d;
 $aurora-01: #bf616a;
-$aurora-02-shadow: #b67662;
 $aurora-02: #d08770;
-$aurora-03-shadow: #ceb27a;
 $aurora-03: #ebcb8b;
-$aurora-04-shadow: #8fa67b;
 $aurora-04: #a3be8c;
-$aurora-05-shadow: #9e7c97;
 $aurora-05: #b48ead;
 
 /* Standart index css */
@@ -103,7 +97,7 @@ footer {
   border-radius: 4px;
 }
 .shiver-button-medium-primary-frost:hover {
-  background-color: $frost-02-shadow;
+  background-color: rgba($frost-02, 0.8);
   transition: color 200ms ease-in 0s;
 }
 
