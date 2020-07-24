@@ -114,6 +114,12 @@
   color: $polar-night-04;
   border: 1px solid;
 }
+body.dark-mode {
+  .default—outline {
+    background-color: $polar-night-01;
+    color: $snow-01;
+  }
+}
 .default—outline:hover {
   color: $frost-04;
   border-color: $frost-04;
