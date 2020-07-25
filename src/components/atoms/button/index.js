@@ -2,18 +2,17 @@ import React, { Component } from "react"
 import cx from "classnames"
 import PropTypes from "prop-types"
 
-import styles from "./styles.module.scss"
+import styles from "./styles.scss"
+import buttonStyles from "./styles.module.scss"
 
 class Button extends Component {
   /* Define static properties for custom CSS classes */
   static propTypes = {
     onClick: PropTypes.func,
     children: PropTypes.node,
-    variant: PropTypes.string,
     className: PropTypes.string,
     label: PropTypes.string,
     size: PropTypes.string,
-    disabledClassName: PropTypes.string,
     disabled: PropTypes.bool,
   }
 
@@ -21,9 +20,6 @@ class Button extends Component {
     className: "",
     label: "",
     size: "",
-    variant: "",
-    disabled: false,
-    disabledClassName: "",
   }
 
   /*
@@ -62,18 +58,9 @@ class Button extends Component {
   render() {
     /* function that return the child that
      * will be rendered inside the button */
-    const { className, size, variant, disabled, disabledClassName } = this.props
+    const { className, size } = this.props
 
-    const _className = cx(
-      className,
-      styles[size],
-      styles.button,
-      styles[variant],
-      {
-        [styles.disabled]: disabled,
-        [disabledClassName]: disabled,
-      }
-    )
+    const _className = cx(className, buttonStyles[size])
 
     return (
       <div onClick={this.handleButtonClick} className={_className}>
