@@ -84,7 +84,7 @@
   }
 }
 
-.default—outline {
+.default-outline {
   background-color: $snow-01;
   border-color: $polar-night-01;
   color: $polar-night-04;
@@ -95,7 +95,7 @@
   }
 }
 body.dark-mode {
-  .default—outline {
+  .default-outline {
     background-color: $polar-night-01;
     color: $snow-01;
     &:hover {
@@ -105,7 +105,7 @@ body.dark-mode {
   }
 }
 
-.primary—outline {
+.primary-outline {
   background-color: $snow-01;
   border-color: $frost-03;
   color: $frost-03;
@@ -115,7 +115,7 @@ body.dark-mode {
   }
 }
 body.dark-mode {
-  .primary—outline {
+  .primary-outline {
     background-color: $polar-night-01;
     color: $snow-01;
     &:hover {

@@ -31,10 +31,10 @@ const Docs = () => {
         <Button label="Disabled" className="button disabled" />
       </div>
       <div style={{ margin: 8 }}>
-        <Button label="Default Outline" className="button default—outline" />
+        <Button label="Default Outline" className="button default-outline" />
       </div>
       <div style={{ margin: 8 }}>
-        <Button label="Primary Outline" className="button primary—outline" />
+        <Button label="Primary Outline" className="button primary-outline" />
       </div>
     </div>
   )
