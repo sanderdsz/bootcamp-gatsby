@@ -13,10 +13,10 @@ const Docs = () => {
       <SideNavigation>Hello world</SideNavigation>
       <DarkModeToogle />
       <div style={{ margin: 8 }}>
-        <Button label="Default" className="button default" />
+        <Button label="Primary" className="button primary" />
       </div>
       <div style={{ margin: 8 }}>
-        <Button label="Primary" className="button primary" />
+        <Button label="Information" className="button info" />
       </div>
       <div style={{ margin: 8 }}>
         <Button label="Success" className="button success" />
@@ -31,10 +31,22 @@ const Docs = () => {
         <Button label="Disabled" className="button disabled" />
       </div>
       <div style={{ margin: 8 }}>
-        <Button label="Default Outline" className="button default-outline" />
+        <Button label="Primary Outline" className="button primary-outline" />
       </div>
       <div style={{ margin: 8 }}>
-        <Button label="Primary Outline" className="button primary-outline" />
+        <Button label="Info Outline" className="button info-outline" />
+      </div>
+      <div style={{ margin: 8 }}>
+        <Button label="Success Outline" className="button success-outline" />
+      </div>
+      <div style={{ margin: 8 }}>
+        <Button label="Warning Outline" className="button warning-outline" />
+      </div>
+      <div style={{ margin: 8 }}>
+        <Button label="Danger Outline" className="button danger-outline" />
+      </div>
+      <div style={{ margin: 8 }}>
+        <Button label="Primary Default" className="button primary-flat" />
       </div>
     </div>
   )
