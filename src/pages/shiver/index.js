@@ -1,11 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/templates/layout"
-import Head from "../components/atoms/head"
+import Layout from "../../components/templates/layout"
+import Head from "../../components/atoms/head"
 
-import ShiverAnimation from "../components/atoms/shiverAnimation"
-import ShiverText from "../components/atoms/shiverText"
+import ShiverAnimation from "../../components/atoms/shiverIcebergAnimation"
+import ShiverText from "../../components/atoms/shiverTextAnimation"
+import Button from "../../components/atoms/button"
 
 const Shiver = () => {
   return (
@@ -28,14 +29,10 @@ const Shiver = () => {
       </div>
       <div className="shiver-container">
         <div className="shiver-container-button">
-          <button className="shiver-button-medium-primary-blue">
-            Coming soon
-          </button>
+          <Button label="Coming soon" className="button primary" />
         </div>
         <div className="shiver-container-button">
-          <button className="shiver-button-medium-primary-light">
-            Coming soon
-          </button>
+          <Button label="Coming soon" className="button default-outline" />
         </div>
       </div>
     </Layout>

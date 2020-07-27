@@ -6,7 +6,7 @@
 .post {
   margin: 1rem 0;
   a {
-    background: #E5E9F0;
+    background: #e5e9f0;
     color: #333333;
     display: block;
     padding: 1rem;
@@ -14,7 +14,7 @@
   }
 
   a:hover {
-    background: #D8DEE9;
+    background: #d8dee9;
   }
 
   h2 {
@@ -28,13 +28,13 @@
   }
 }
 body.dark-mode {
-  .post{
+  .post {
     a {
-      background: #3B4252;
-      color: #ECEFF4
+      background: #3b4252;
+      color: #eceff4;
     }
     p {
-      color: #D8DEE9
+      color: #d8dee9;
     }
   }
 }
