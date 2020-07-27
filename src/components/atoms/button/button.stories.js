@@ -1,4 +1,3 @@
-/*
 import React from "react"
 import { storiesOf } from "@storybook/react"
 import { action } from "@storybook/addon-actions"
@@ -10,5 +9,5 @@ export default {
   component: Button,
 }
 
-export const teste = () => <Button label="teste" className="button default" />
-*/
+export const teste = () => <Button label="teste" />
+
