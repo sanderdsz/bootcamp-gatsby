@@ -24,7 +24,7 @@ $phone-large: 414px;
 $snow-01: #eceff4;
 $snow-02: #e5e9f0;
 $snow-03: #d8dee9;
-$snow-04: #C8CCD2;
+$snow-04: #c8ccd2;
 
 /* Polar Night */
 $polar-night-01: #2e3440;
@@ -70,6 +70,10 @@ $aurora-05: #b48ead;
 
 html {
   font: 112.5%/1.45em "Rubik", sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 body.dark-mode {

@@ -7,6 +7,7 @@ import Head from "../../components/atoms/head"
 import ShiverAnimation from "../../components/atoms/shiverIcebergAnimation"
 import ShiverText from "../../components/atoms/shiverTextAnimation"
 import Button from "../../components/atoms/button"
+import { Button as Botao } from "shiver-design-system"
 
 const Shiver = () => {
   return (
@@ -29,10 +30,14 @@ const Shiver = () => {
       </div>
       <div className="shiver-container">
         <div className="shiver-container-button">
-          <Button label="Coming soon" className="button primary" />
+          <a href="https://www.npmjs.com/package/shiver-design-system">
+            <Button label="Repository" className="button primary"></Button>
+          </a>
         </div>
         <div className="shiver-container-button">
-          <Button label="Coming soon" className="button default-outline" />
+          <a href="https://shiver-storybook.netlify.app/">
+            <Botao theme="primary-outline">Storybook</Botao>
+          </a>
         </div>
       </div>
     </Layout>
