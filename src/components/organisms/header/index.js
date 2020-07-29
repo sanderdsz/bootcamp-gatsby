@@ -4,6 +4,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import DarkModeToogle from "../../atoms/darkModeToggle"
 
+
 const Header = () => {
   const data = useStaticQuery(graphql`
     query {

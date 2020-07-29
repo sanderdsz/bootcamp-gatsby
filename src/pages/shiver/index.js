@@ -1,13 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../../components/templates/layout"
 import Head from "../../components/atoms/head"
 
 import ShiverAnimation from "../../components/atoms/shiverIcebergAnimation"
 import ShiverText from "../../components/atoms/shiverTextAnimation"
-import Button from "../../components/atoms/button"
-import { Button as Botao } from "shiver-design-system"
+import { Button } from "shiver-design-system"
 
 const Shiver = () => {
   return (
@@ -31,12 +29,12 @@ const Shiver = () => {
       <div className="shiver-container">
         <div className="shiver-container-button">
           <a href="https://www.npmjs.com/package/shiver-design-system">
-            <Button label="Repository" className="button primary"></Button>
+            <Button theme="primary">Repository</Button>
           </a>
         </div>
         <div className="shiver-container-button">
           <a href="https://shiver-storybook.netlify.app/">
-            <Botao theme="primary-outline">Storybook</Botao>
+            <Button theme="primary-outline">Storybook</Button>
           </a>
         </div>
       </div>
