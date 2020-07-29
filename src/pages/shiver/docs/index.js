@@ -7,6 +7,8 @@ import DarkModeToogle from "../../../components/atoms/darkModeToggle"
 
 import Button from "../../../components/atoms/button"
 
+import { TestComponent, Button as Baita } from "shiver-design-system"
+
 const Docs = () => {
   return (
     <div style={{ margin: 8 }}>
@@ -48,6 +50,8 @@ const Docs = () => {
       <div style={{ margin: 8 }}>
         <Button label="Primary Default" className="button primary-flat" />
       </div>
+      <TestComponent theme="secondary" />
+      <Baita theme="primary-outline">SANDER</Baita>
     </div>
   )
 }
