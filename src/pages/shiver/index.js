@@ -35,7 +35,7 @@ const Shiver = () => {
           </a>
         </div>
         <div className="shiver-container-button">
-          <a href="https://shiver-storybook.netlify.app/">
+          <a href="https://shiver-storybook.netlify.app/?path=/docs/introduction-getting-started--page">
             <Botao theme="primary-outline">Storybook</Botao>
           </a>
         </div>
