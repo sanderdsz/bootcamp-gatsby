@@ -33,7 +33,7 @@ const Shiver = () => {
           </a>
         </div>
         <div className="shiver-container-button">
-          <a href="https://shiver-storybook.netlify.app/">
+          <a href="https://shiver-storybook.netlify.app/?path=/docs/introduction-getting-started--page">
             <Button theme="primary-outline">Storybook</Button>
           </a>
         </div>
