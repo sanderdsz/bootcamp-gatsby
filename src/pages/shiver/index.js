@@ -30,8 +30,8 @@ const Shiver = () => {
       </div>
       <div className="shiver-container">
         <div className="shiver-container-button">
-          <a href="https://www.npmjs.com/package/shiver-design-system">
-            <Button label="Repository" className="button primary"></Button>
+          <a href="https://shiver-docs.netlify.app/">
+            <Button label="Documentation" className="button primary"></Button>
           </a>
         </div>
         <div className="shiver-container-button">
